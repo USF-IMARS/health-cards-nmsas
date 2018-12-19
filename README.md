@@ -24,6 +24,15 @@ NMSAS data collected for this:
 * benthic, fish, algae, etc occurences
     * TODO: align to Darwin Core, put in OBIS?
 
+## comparables / inspiration
+Similar examples or inspirations for the "Health Card" concept:
+1. American Samoa Status Report (see `./assets/documents/`)
+1. Island Reports for Tutuila (see `./assets/documents/`)
+1. [Chesapeake Bay health report card](https://ecoreportcard.org/report-cards/chesapeake-bay/health/)
+
+## Relevant links:
+* [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ----------------------------------------------------------
 ----------------------------------------------------------
 ----------------------------------------------------------
@@ -31,7 +40,6 @@ NMSAS data collected for this:
 # Old Stuff From Upstream Repo:
 [![Build Status](https://travis-ci.org/marinebon/condition-reports.svg?branch=master)](https://travis-ci.org/marinebon/condition-reports)
 iadf
-This repo is an IMaRS-tech group project designed to explore markdown, jekyll, Rmd, jupyter, and other technologies to help address Specific Condition Report Questions (SCRQs).
 
 Within the "pages" directory is a markdown (`.md`) file addressing each of the SCRQs sections from the 2018 CR Guidance document (pg 7).
 These sections (and their IMaRS developer usertag) are:
@@ -41,11 +49,6 @@ These sections (and their IMaRS developer usertag) are:
 * Habitat Resources
 * Living Resources
 * Maritime Archaeological Resources (NONE)
-
-
-## Relevant links:
-* [2018 Condition Report Guidance](https://github.com/USF-IMARS/condition-reports/blob/master/2018-condition-report-guidance.pdf)
-* [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## External Demos & Links
 
