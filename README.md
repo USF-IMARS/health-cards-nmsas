@@ -1,16 +1,45 @@
-# condition-reports
+# Health Cards NMS AS
 
+ridge-to-reef + Coral reef advisory / EPA / sanctuary
+
+**"what drives reef change?"**
+
+The "Health Card" summarizes the status of the local reef/watershed for the public.
+
+* health cards may have two versions:
+    1. simplified print version
+    2. more detailed on-line version more akin to infographiq infographics
+* how to display data for villagers to understand?
+* users have low education level
+* some online & print card from that
+* 1-pager printout "this is your watershed" & summary
+* NMSAS divided into multiple areas (unlike other NMS).
+    * one per "Health Card" for management areas
+    * 26 areas total, starting w/ 2
+
+## data
+NMSAS data collected for this:
+* water quality (monthly @ streams)
+    * TODO: put into ERDDAP?
+* benthic, fish, algae, etc occurences
+    * TODO: align to Darwin Core, put in OBIS?
+
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+
+# Old Stuff From Upstream Repo:
 [![Build Status](https://travis-ci.org/marinebon/condition-reports.svg?branch=master)](https://travis-ci.org/marinebon/condition-reports)
-
+iadf
 This repo is an IMaRS-tech group project designed to explore markdown, jekyll, Rmd, jupyter, and other technologies to help address Specific Condition Report Questions (SCRQs).
 
-Within the "pages" directory is a markdown (`.md`) file addressing each of the SCRQs sections from the 2018 CR Guidance document (pg 7). 
+Within the "pages" directory is a markdown (`.md`) file addressing each of the SCRQs sections from the 2018 CR Guidance document (pg 7).
 These sections (and their IMaRS developer usertag) are:
 
 * Drivers and Pressures (NONE)
 * Water Quality
-* Habitat Resources 
-* Living Resources 
+* Habitat Resources
+* Living Resources
 * Maritime Archaeological Resources (NONE)
 
 
@@ -40,7 +69,7 @@ interactive graphs/plots/maps:
 
 interactive code demonstration notebooks:
 * python jupyter notebooks : [GIS example](http://nbviewer.jupyter.org/github/mqlaql/geospatial-data/blob/master/Geospatial-Data-with-Python.ipynb)
-* R-markdown : [example dashboard](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-highcharter/htmlwidgets-highcharter.html) 
+* R-markdown : [example dashboard](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-highcharter/htmlwidgets-highcharter.html)
 
 ## The CR Process in Theory
 
