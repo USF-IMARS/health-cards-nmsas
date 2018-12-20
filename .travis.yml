@@ -24,6 +24,7 @@ before_script:
   # r python libs
   - Rscript -e 'devtools::install_github("jeremiaheb/rvc")'
   - Rscript -e 'devtools::install_github("timelyportfolio/d3treeR")'
+  - Rscript -e 'devtools::install_github("iobis/robis", ref="obis2")'
   # python libs
   - pip install -r requirements.txt
   # matplotlib backend:
@@ -33,10 +34,25 @@ script:
   - Rscript -e 'rmarkdown::render_site()'
   - echo === BUILD PAGES DIR
   - cp _site.yml pages/_site.yml
-  - Rscript -e 'rmarkdown::render_site("pages")'
+  - cd pages
+  - Rscript -e 'rmarkdown::render_site()'
+  - cd ..
+  - echo === BUILD EXAMPLES DIR
+  - cp _site.yml examples/_site.yml
+  - cd examples
+  - Rscript -e 'rmarkdown::render_site()'
+  - cd ..
+  - echo === BUILD EXAMPLES OTGA
+  - cp _site.yml examples/otga/_site.yml
+  - cd examples/otga
+  - Rscript -e 'rmarkdown::render_site()'
+  - cd ../..
 after_success:
   - echo === PUSHING TO GITHUB
-  - git ls-files -m -o | grep -v '.html' | xargs git add
+  # - git ls-files -m -o -X .gitignore -x '*.html' | xargs ls -lh
+  # - git ls-files -m -o -X .gitignore -x '*.html' | xargs git add
+  # see #17
+  - find . -type f -not -path '*.git*' -a -not -name '*~' -a -not -name '*.html' -print0 | xargs -0 git add
   - git commit -m "travis-ci.org Rmd render [ci skip]"
   - git push --force https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:gh-pages
 notifications:
