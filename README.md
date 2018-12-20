@@ -29,6 +29,7 @@ Similar examples or inspirations for the "Health Card" concept:
 1. American Samoa Status Report (see `./assets/documents/`)
 1. Island Reports for Tutuila (see `./assets/documents/`)
 1. [Chesapeake Bay health report card](https://ecoreportcard.org/report-cards/chesapeake-bay/health/)
+1. NMS AS Practitioner Guide habitat overview (pg 11) (see `./assets/documents/`)
 
 ## Relevant links:
 * [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
