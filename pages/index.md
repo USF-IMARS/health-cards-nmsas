@@ -1,1 +1,1 @@
-What pages should go here?
+* [exploratory analysis of fagatele bay](./fagatele)
