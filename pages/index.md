@@ -1,1 +1,2 @@
-* [exploratory analysis of fagatele bay](./fagatele)
+
+  - [exploratory analysis of fagatele bay](./fagatele)
